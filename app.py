@@ -17,10 +17,10 @@ selected_sex = st.selectbox('Select sex', df_time_gender['sex'].unique())
 filtered_df = df_time_gender[df_time_gender['sex'] == selected_sex]
 
 st.subheader(f'Confirmed cases for {selected_sex}')
-st.line_chart(filtered_df['confirmed'])
+st.line_chart(filtered_df, x='date', y='confirmed')
 
 st.subheader(f'Deceased cases for {selected_sex}')
-st.bar_chart(filtered_df['deceased'])
+st.bar_chart(filtered_df, x='date', y='deceased')
 
 st.title('COVID-19 Cases on Map')
 
