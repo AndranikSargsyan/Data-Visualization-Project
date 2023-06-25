@@ -1,0 +1,8 @@
+folium==0.14.0
+matplotlib
+missingno
+numpy
+pandas==2.0.0
+seaborn
+streamlit==1.23.1
+streamlit-folium==0.12.0
